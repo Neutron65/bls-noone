@@ -1,0 +1,38 @@
+Python 3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+# Blockless Function Configuration
+
+# Name of the function
+name = "Noone"
+
+# Type of the function (currently should be specified as "function" only)
+type = "function"
+
+# Version of the function
+version = "1.0.0"
+
+# Content type of the response
+content_type = "json"
+
+# Deployment configuration
+[deployment]
+
+# Number of nodes to be used for deployment
+nodes = 1
+
+# Extensions and URLs allowed for the function to make external requests
+permissions = []
+
+# Build configuration
+[build]
+
+# Build in debug mode
+dir = "build"
+entry = "noone_debug.wasm"
+command = "npm run build:debug"
+
+# Build for release or production version
+[build_release]
+dir = "build"
+entry = "noone.wasm"
+command = "npm run build:release"

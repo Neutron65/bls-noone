@@ -1,0 +1,17 @@
+Python 3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+{
+  "name": "noone-function",
+  "version": "1.0.0",
+  "description": "A simple Blockless function for demonstration purposes.",
+  "main": "index.js",
+  "scripts": {
+    "build:debug": "tsc",
+    "build:release": "tsc -p tsconfig.release.json"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
